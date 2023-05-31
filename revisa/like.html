@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #likeBtn{
+        background-color: transparent;
+        border: none;
+    }
+
+    body{
+        background: black;
+    }
+</style>
+<body>
+    <button id="likeBtn"><img id="likeImg" src="./gostar.png" alt=""></button>
+    <script>
+        const likeBtn = document.getElementById('likeBtn')
+        const likeImg = document.getElementById('likeImg')
+        let isLiked = false
+
+        likeBtn.addEventListener('click', () => {
+            isLiked = !isLiked
+
+            if (isLiked) {
+                likeImg.src = "./gostar (1).png"
+            } else {
+                likeImg.src = "./gostar.png"
+            }
+        })
+    </script>
+</body>
+
+</html>

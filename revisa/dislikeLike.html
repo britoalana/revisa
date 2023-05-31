@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+button{
+    background-color: transparent;
+    border: none;
+    
+}
+span{
+    font-size: 24px;
+}
+</style>
+
+<body>
+    <button id="likeBtn"><img src="./like.png" alt="" width="100px" height="100px"><span id="countLike">0</span></button>
+    <button id="dislikeBtn"><img src="./nao-gosto.png" alt="" width="100px" height="100px"><span id="countDislike">0</span></button>
+
+<script>
+    const likeBtn = document.getElementById('likeBtn')
+    
+
+    const countLike = document.getElementById('countLike')
+    
+
+    let counterLike = 0
+
+    likeBtn.addEventListener('click', () =>{
+        counterLike++
+        countLike.textContent= counterLike
+    })
+    const dislikeBtn = document.getElementById('dislikeBtn')
+    const countDisLike = document.getElementById('countDislike')
+    let counterDislike = 0
+    dislikeBtn.addEventListener('click', () =>{
+        counterDislike++
+        countDislike.textContent= counterDislike
+    })
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    text-transform: uppercase;
+}
+
+header {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.links{
+    display: flex; 
+    gap: 1rem;
+}
+
+header {
+    text-decoration: none;
+    gap: 1rem;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    position: relative;
+    padding-top: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.box2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.box3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    background-color: #000;
+
+}
+
+.logoBranca {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.linha {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.direitos {
+    color: #fff;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.articleBox1 {
+    width: 640px;
+    top: 760px;
+    position: absolute;
+    padding: .5rem;
+    background-color: #3b3b3b79;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleBox2 {
+    top: 1420px;
+    width: 17.3%;
+    position: absolute;
+    padding: .5rem;
+    background-color: #3b3b3b79;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleBox3 {
+    top: 2120px;
+    width: 400px;
+    position: absolute;
+    padding: .5rem;
+    background-color: #3b3b3b79;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(160, 157, 157, 0.479);
+    
+    overflow: auto;
+    left: 0;
+    top: 0;
+}
+
+.modal-conteudo form{
+    width: 50%;
+    height: 280px;
+    gap: 1rem;
+    margin: 5% auto;
+    display: flex;
+    background-color: #fefefe;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 10px;
+}
+input{
+    border-radius: 5px;
+    width: 200px;
+    padding: .5rem;
+}
+
+
+
+#login{
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    width: 200px;
+    padding: .5rem;
+}
+
+
+.box1 button, .box2 button, .box3 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.numeroFoto {
+    color: #fff;
+}
+
+.cancelar {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    padding: .5rem;
+}
+
+.login {
+    color: #fff;
+    background-color: #313131;
+    border-radius: 5px;
+    width: 200px;
+    padding: .5rem;
+}
+
+.input {
+    padding: .5rem;
+}
